@@ -127,6 +127,7 @@ function sumar (num1, num2) {
     return num1 + num2;
 }
 console.log('typeof-->',typeof sumar);
+console.log("hola WILIAM que tal estas");
 
 
 
