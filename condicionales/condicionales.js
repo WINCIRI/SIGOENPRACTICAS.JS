@@ -221,18 +221,64 @@ javascript interpreta algunos valores como
 verdaderos (truthy) y otros como falsos (falsy)
    Ej: */
 
-const valor = true;
+const valor = 23;
 if (valor) {
     console.log('Es verdadero ');
 } else {
     console.log('Es falso');
 }
 
+/*         así entiende JS los siguientes valores:
+
+        º   true -------------> true
+        º   numeros -----------> true
+        º   - numeros-----------> true
+        º   string lleno --------> true
+        º   arrays llenos o no ---> true
+        º   objetos llenos o no ---> true
+
+        º   false -------> false
+        º   cero "0"-------> false
+        º   null -----------> false
+        º   undefined -------> fasle
+        º   string vacio -----> false
+
+Todo esto se puede averiguar empleando la funcio boolean()
+ya que convertira lo que metamos dentro en un buleano y no 
+dira si es true o false.
+
+*/
+
+/* Ejemplo de como resolver un ejercicio de js:
+
+- guarda en una variable tu edad. Imprime en consola un 
+  mensaje según si eres mayor de edad.:
+  
+  1.- Guardar en variables toda la imformación necesaia para empezar.*/
+
+        const otraEdad = 50; 
+        let eresMayorDeEdad = false ; /*
+
+  2.- Ejecutar estructuras de js para cambiar esas variables iniciales.*/
 
 
+        if (otraEdad < 18) {
+            eresMayorDeEdad = false
+        } else  {
+            eresMayorDeEdad = true  // devolvera el error intentas cambiarle el valor a una variable constante y deberas cambiar de const a let la variable.
+
+        }  /*
 
 
+  3.- Ver los resultados y establecer conclusiones.*/
 
+        console.log(eresMayorDeEdad); //de esta manera o de la siguiente:
+
+        if (eresMayorDeEdad) {
+            console.log('Que mayor');
+        } else {
+            console.log('Que peque');
+        };
 
 
 
